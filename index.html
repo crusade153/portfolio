@@ -1291,8 +1291,580 @@
         </div>
     </div>
 
-    <!-- 나머지 모달 2~9는 기존과 동일하므로 생략 (원본 참조) -->
+    <!-- 모달 2~9를 모달 1 다음에 추가하세요 -->
 
+    <!-- 모달 2: 실시간 재고/소비기한 관리 -->
+    <div id="modal2" class="modal">
+        <div class="modal-content">
+            <div class="p-8 border-b border-slate-200">
+                <span class="close-modal" onclick="closeModal('modal2')">&times;</span>
+                <h2 class="text-3xl font-bold text-slate-900 mt-2">실시간 재고/소비기한 관리 시스템</h2>
+                <p class="text-slate-600 mt-2">Real-time Inventory & Expiration Date Management</p>
+            </div>
+            <div class="p-8">
+                <div class="mb-6">
+                    <h3 class="text-xl font-bold text-slate-900 mb-3">🎯 프로젝트 배경</h3>
+                    <p class="text-slate-600 keep-all leading-relaxed">
+                        식품 제조업의 생명선은 바로 <strong>신선도 관리</strong>입니다. 기존에는 재고 담당자가 엑셀로 수기 관리하며 소비기한이 임박한 
+                        재고를 발견하지 못해 폐기 손실이 발생하거나, 반대로 과도한 안전재고로 인한 창고 비효율이 문제였습니다. 
+                        특히 원부자재 1000여 종을 일일이 확인하는 것은 <strong>물리적으로 불가능</strong>했습니다.
+                    </p>
+                </div>
+
+                <div class="mb-6">
+                    <h3 class="text-xl font-bold text-slate-900 mb-3">💡 솔루션</h3>
+                    <ul class="space-y-2 text-slate-600">
+                        <li class="flex items-start gap-2">
+                            <i class="fas fa-check-circle text-green-500 mt-1"></i>
+                            <span><strong>실시간 재고 수불부 자동 집계:</strong> 입출고 즉시 반영되는 Live 재고 현황판</span>
+                        </li>
+                        <li class="flex items-start gap-2">
+                            <i class="fas fa-check-circle text-green-500 mt-1"></i>
+                            <span><strong>소비기한 D-Day 컬러 시각화:</strong> 7일 이내(빨강), 14일 이내(노랑), 30일 이내(파랑) 3단계 경보</span>
+                        </li>
+                        <li class="flex items-start gap-2">
+                            <i class="fas fa-check-circle text-green-500 mt-1"></i>
+                            <span><strong>FEFO(선입선출) 위반 알림:</strong> 오래된 LOT가 남아있는데 신규 LOT가 출고되는 이상 패턴 자동 감지</span>
+                        </li>
+                        <li class="flex items-start gap-2">
+                            <i class="fas fa-check-circle text-green-500 mt-1"></i>
+                            <span><strong>폐기 예정 재고 사전 알림:</strong> 소비기한 7일 전 담당자에게 자동 이메일 발송</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="mb-6">
+                    <h3 class="text-xl font-bold text-slate-900 mb-3">📊 정량적 성과</h3>
+                    <div class="grid md:grid-cols-3 gap-4">
+                        <div class="bg-green-50 p-4 rounded-lg text-center">
+                            <p class="text-3xl font-bold text-green-600">500시간</p>
+                            <p class="text-sm text-slate-600 mt-1">연간 절감 (2h×250일)</p>
+                        </div>
+                        <div class="bg-green-50 p-4 rounded-lg text-center">
+                            <p class="text-3xl font-bold text-green-600">800만원</p>
+                            <p class="text-sm text-slate-600 mt-1">기회비용 절감</p>
+                        </div>
+                        <div class="bg-green-50 p-4 rounded-lg text-center">
+                            <p class="text-3xl font-bold text-green-600">85%</p>
+                            <p class="text-sm text-slate-600 mt-1">폐기 손실 감소</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div>
+                    <h3 class="text-xl font-bold text-slate-900 mb-3">🛠️ 기술 스택</h3>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="badge badge-success">Google Apps Script</span>
+                        <span class="badge badge-success">ERP API 연동</span>
+                        <span class="badge badge-success">조건부 서식 자동화</span>
+                        <span class="badge badge-success">Gmail API</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 모달 3: AI 근태 예측/관리 시스템 -->
+    <div id="modal3" class="modal">
+        <div class="modal-content">
+            <div class="p-8 border-b border-slate-200">
+                <span class="close-modal" onclick="closeModal('modal3')">&times;</span>
+                <h2 class="text-3xl font-bold text-slate-900 mt-2">AI 근태 예측/관리 시스템</h2>
+                <p class="text-slate-600 mt-2">AI-powered Labor Law Compliance & Workforce Management</p>
+            </div>
+            <div class="p-8">
+                <div class="mb-6">
+                    <h3 class="text-xl font-bold text-slate-900 mb-3">🎯 프로젝트 배경</h3>
+                    <p class="text-slate-600 keep-all leading-relaxed">
+                        주 52시간 근로시간 제한이 법제화되면서 <strong>법적 리스크 관리</strong>가 필수가 되었습니다. 
+                        특히 제조업 현장에서는 돌발 생산 증가, 인력 결원 등으로 주말 근무가 불가피한데, 
+                        사후에 52시간 초과를 발견하면 이미 <strong>근로기준법 위반</strong>이 확정된 상태였습니다. 
+                        기존 EHR(전자인사) 시스템은 '주간 누적 시간'만 보여줄 뿐 <strong>예측 기능이 전무</strong>했습니다.
+                    </p>
+                </div>
+
+                <div class="mb-6">
+                    <h3 class="text-xl font-bold text-slate-900 mb-3">💡 솔루션</h3>
+                    <ul class="space-y-2 text-slate-600">
+                        <li class="flex items-start gap-2">
+                            <i class="fas fa-check-circle text-purple-500 mt-1"></i>
+                            <span><strong>EHR 시스템 실시간 연동:</strong> 출퇴근 기록, 연장·야간·휴일근무 데이터 자동 수집</span>
+                        </li>
+                        <li class="flex items-start gap-2">
+                            <i class="fas fa-check-circle text-purple-500 mt-1"></i>
+                            <span><strong>주간 누적 시간 + 예측 알고리즘:</strong> 수요일 시점에 "현재 패턴이 지속되면 토요일에 52시간 돌파 예정" 경고</span>
+                        </li>
+                        <li class="flex items-start gap-2">
+                            <i class="fas fa-check-circle text-purple-500 mt-1"></i>
+                            <span><strong>4단계 경보 체계:</strong> 주의(44h) → 경고(48h) → 중대위험(50h) → 법 위반(52h)</span>
+                        </li>
+                        <li class="flex items-start gap-2">
+                            <i class="fas fa-check-circle text-purple-500 mt-1"></i>
+                            <span><strong>대체 인력 자동 제안:</strong> 위험군 직원의 잔여 업무를 가용 인력에게 재배치하는 시뮬레이션 제공</span>
+                        </li>
+                        <li class="flex items-start gap-2">
+                            <i class="fas fa-check-circle text-purple-500 mt-1"></i>
+                            <span><strong>임원 실시간 대시보드:</strong> 공장별/팀별 위험 현황을 한눈에 파악</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="mb-6">
+                    <h3 class="text-xl font-bold text-slate-900 mb-3">📊 정량적 성과</h3>
+                    <div class="grid md:grid-cols-3 gap-4">
+                        <div class="bg-purple-50 p-4 rounded-lg text-center">
+                            <p class="text-3xl font-bold text-purple-600">208시간</p>
+                            <p class="text-sm text-slate-600 mt-1">연간 절감 (4h×52주)</p>
+                        </div>
+                        <div class="bg-purple-50 p-4 rounded-lg text-center">
+                            <p class="text-3xl font-bold text-purple-600">333만원</p>
+                            <p class="text-sm text-slate-600 mt-1">기회비용 절감</p>
+                        </div>
+                        <div class="bg-purple-50 p-4 rounded-lg text-center">
+                            <p class="text-3xl font-bold text-purple-600">100%</p>
+                            <p class="text-sm text-slate-600 mt-1">법 위반 사전 차단</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div>
+                    <h3 class="text-xl font-bold text-slate-900 mb-3">🛠️ 기술 스택</h3>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="badge badge-purple">Google Apps Script</span>
+                        <span class="badge badge-purple">EHR API 연동</span>
+                        <span class="badge badge-purple">예측 알고리즘</span>
+                        <span class="badge badge-purple">대시보드 시각화</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 모달 4: 실시간 생산성 대시보드 -->
+    <div id="modal4" class="modal">
+        <div class="modal-content">
+            <div class="p-8 border-b border-slate-200">
+                <span class="close-modal" onclick="closeModal('modal4')">&times;</span>
+                <h2 class="text-3xl font-bold text-slate-900 mt-2">실시간 생산성 대시보드</h2>
+                <p class="text-slate-600 mt-2">Real-time Productivity Monitoring & Bottleneck Detection</p>
+            </div>
+            <div class="p-8">
+                <div class="mb-6">
+                    <h3 class="text-xl font-bold text-slate-900 mb-3">🎯 프로젝트 배경</h3>
+                    <p class="text-slate-600 keep-all leading-relaxed">
+                        생산 현장에서 "오늘 왜 생산량이 낮았지?"라는 질문에 답하려면 <strong>사후 분석에 반나절</strong>이 소요되었습니다. 
+                        라인별, 시간대별 생산성 차이가 크지만 <strong>어디서 병목이 발생했는지</strong> 즉시 알 수 없어 
+                        당일 대응이 불가능했고, 결국 같은 문제가 반복되었습니다.
+                    </p>
+                </div>
+
+                <div class="mb-6">
+                    <h3 class="text-xl font-bold text-slate-900 mb-3">💡 솔루션</h3>
+                    <ul class="space-y-2 text-slate-600">
+                        <li class="flex items-start gap-2">
+                            <i class="fas fa-check-circle text-indigo-500 mt-1"></i>
+                            <span><strong>인시당 생산량(UPMH) 실시간 집계:</strong> 투입 인력 대비 시간당 생산량을 라인별로 비교</span>
+                        </li>
+                        <li class="flex items-start gap-2">
+                            <i class="fas fa-check-circle text-indigo-500 mt-1"></i>
+                            <span><strong>비효율 구간 즉시 인식:</strong> 평균 대비 80% 미만 성과가 2시간 이상 지속되면 빨간 경고</span>
+                        </li>
+                        <li class="flex items-start gap-2">
+                            <i class="fas fa-check-circle text-indigo-500 mt-1"></i>
+                            <span><strong>시간대별 히트맵 시각화:</strong> 오전/오후/야간 중 어느 타임에 생산성이 떨어지는지 한눈에 파악</span>
+                        </li>
+                        <li class="flex items-start gap-2">
+                            <i class="fas fa-check-circle text-indigo-500 mt-1"></i>
+                            <span><strong>목표 대비 Gap 분석:</strong> 계획 대비 실적의 차이를 실시간 추적하여 잔여 시간 내 만회 가능 여부 판단</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="mb-6">
+                    <h3 class="text-xl font-bold text-slate-900 mb-3">📊 정량적 성과</h3>
+                    <div class="grid md:grid-cols-3 gap-4">
+                        <div class="bg-indigo-50 p-4 rounded-lg text-center">
+                            <p class="text-3xl font-bold text-indigo-600">분석 자동화</p>
+                            <p class="text-sm text-slate-600 mt-1">30분 내 병목 발견</p>
+                        </div>
+                        <div class="bg-indigo-50 p-4 rounded-lg text-center">
+                            <p class="text-3xl font-bold text-indigo-600">15%</p>
+                            <p class="text-sm text-slate-600 mt-1">평균 생산성 향상</p>
+                        </div>
+                        <div class="bg-indigo-50 p-4 rounded-lg text-center">
+                            <p class="text-3xl font-bold text-indigo-600">10개</p>
+                            <p class="text-sm text-slate-600 mt-1">라인 동시 모니터링</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div>
+                    <h3 class="text-xl font-bold text-slate-900 mb-3">🛠️ 기술 스택</h3>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="badge badge-primary">Google Apps Script</span>
+                        <span class="badge badge-primary">MES 실시간 연동</span>
+                        <span class="badge badge-primary">히트맵 시각화</span>
+                        <span class="badge badge-primary">Chart.js</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 모달 5: 일일 실적 마감 모니터링 -->
+    <div id="modal5" class="modal">
+        <div class="modal-content">
+            <div class="p-8 border-b border-slate-200">
+                <span class="close-modal" onclick="closeModal('modal5')">&times;</span>
+                <h2 class="text-3xl font-bold text-slate-900 mt-2">일일 실적 마감 모니터링 시스템</h2>
+                <p class="text-slate-600 mt-2">Daily Closing Progress Tracking & Pinpoint Notification</p>
+            </div>
+            <div class="p-8">
+                <div class="mb-6">
+                    <h3 class="text-xl font-bold text-slate-900 mb-3">🎯 프로젝트 배경</h3>
+                    <p class="text-slate-600 keep-all leading-relaxed">
+                        생산 실적 마감은 <strong>다음날 아침 9시까지</strong> 완료되어야 원가 집계가 가능한데, 
+                        기존에는 담당자들이 "잘 하고 있겠지"라는 막연한 기대 속에서 <strong>누가 미처리 상태인지 몰랐습니다</strong>. 
+                        결국 마감 시각에 확인해보면 여러 팀이 미완료 상태여서 전 직원이 긴급 잔업하는 악순환이 반복되었습니다.
+                    </p>
+                </div>
+
+                <div class="mb-6">
+                    <h3 class="text-xl font-bold text-slate-900 mb-3">💡 솔루션</h3>
+                    <ul class="space-y-2 text-slate-600">
+                        <li class="flex items-start gap-2">
+                            <i class="fas fa-check-circle text-orange-500 mt-1"></i>
+                            <span><strong>마감 진척률 실시간 시각화:</strong> 팀별/공정별 완료율을 프로그레스 바로 표시 (예: 라인A 85%, 라인B 40%)</span>
+                        </li>
+                        <li class="flex items-start gap-2">
+                            <i class="fas fa-check-circle text-orange-500 mt-1"></i>
+                            <span><strong>담당자별 '핀셋 알림':</strong> 미완료 건이 있는 담당자에게만 개별 이메일 자동 발송 (오후 5시, 6시, 7시 3회)</span>
+                        </li>
+                        <li class="flex items-start gap-2">
+                            <i class="fas fa-check-circle text-orange-500 mt-1"></i>
+                            <span><strong>지연 사유 자동 수집:</strong> 미완료 사유를 선택(설비고장/자재부족/인력부족 등)하면 통계 누적</span>
+                        </li>
+                        <li class="flex items-start gap-2">
+                            <i class="fas fa-check-circle text-orange-500 mt-1"></i>
+                            <span><strong>임원 대시보드:</strong> 전사 마감 현황을 한 화면에서 파악하여 즉시 의사결정</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="mb-6">
+                    <h3 class="text-xl font-bold text-slate-900 mb-3">📊 정량적 성과</h3>
+                    <div class="grid md:grid-cols-3 gap-4">
+                        <div class="bg-orange-50 p-4 rounded-lg text-center">
+                            <p class="text-3xl font-bold text-orange-600">500시간</p>
+                            <p class="text-sm text-slate-600 mt-1">연간 절감 (2h×250일)</p>
+                        </div>
+                        <div class="bg-orange-50 p-4 rounded-lg text-center">
+                            <p class="text-3xl font-bold text-orange-600">800만원</p>
+                            <p class="text-sm text-slate-600 mt-1">기회비용 절감</p>
+                        </div>
+                        <div class="bg-orange-50 p-4 rounded-lg text-center">
+                            <p class="text-3xl font-bold text-orange-600">95%</p>
+                            <p class="text-sm text-slate-600 mt-1">정시 마감률</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div>
+                    <h3 class="text-xl font-bold text-slate-900 mb-3">🛠️ 기술 스택</h3>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="badge badge-warning">Google Apps Script</span>
+                        <span class="badge badge-warning">Gmail API</span>
+                        <span class="badge badge-warning">시간 기반 트리거</span>
+                        <span class="badge badge-warning">프로그레스 바 시각화</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 모달 6: 재료비 원단위 심층 분석 -->
+    <div id="modal6" class="modal">
+        <div class="modal-content">
+            <div class="p-8 border-b border-slate-200">
+                <span class="close-modal" onclick="closeModal('modal6')">&times;</span>
+                <h2 class="text-3xl font-bold text-slate-900 mt-2">재료비 원단위 심층 분석 시스템</h2>
+                <p class="text-slate-600 mt-2">Deep Dive Material Cost Analysis (Yield vs. Price)</p>
+            </div>
+            <div class="p-8">
+                <div class="mb-6">
+                    <h3 class="text-xl font-bold text-slate-900 mb-3">🎯 프로젝트 배경</h3>
+                    <p class="text-slate-600 keep-all leading-relaxed">
+                        재료비가 전월 대비 증가했을 때 "왜 올랐는가?"를 규명하는 것이 <strong>원가 관리의 핵심</strong>입니다. 
+                        하지만 기존 분석은 "재료비가 10% 올랐습니다"로 끝났고, 그것이 <strong>내부 요인(수율 악화)</strong>인지 
+                        <strong>외부 요인(단가 상승)</strong>인지 구분하지 못해 대책 수립이 불가능했습니다.
+                    </p>
+                </div>
+
+                <div class="mb-6">
+                    <h3 class="text-xl font-bold text-slate-900 mb-3">💡 솔루션</h3>
+                    <ul class="space-y-2 text-slate-600">
+                        <li class="flex items-start gap-2">
+                            <i class="fas fa-check-circle text-blue-500 mt-1"></i>
+                            <span><strong>수율 효과 vs. 단가 효과 분리:</strong> 재료비 증감을 ① 투입량 변화(수율) ② 구매 단가 변화로 2단계 분해</span>
+                        </li>
+                        <li class="flex items-start gap-2">
+                            <i class="fas fa-check-circle text-blue-500 mt-1"></i>
+                            <span><strong>원재료별 기여도 분석:</strong> 주원료/부원료/포장재 중 어느 항목이 가장 큰 영향을 미쳤는지 파레토 차트로 시각화</span>
+                        </li>
+                        <li class="flex items-start gap-2">
+                            <i class="fas fa-check-circle text-blue-500 mt-1"></i>
+                            <span><strong>품목별 드릴다운:</strong> "닭고기 가격 상승 15%가 전체 재료비 증가의 60%를 설명" 같은 구체적 인사이트 도출</span>
+                        </li>
+                        <li class="flex items-start gap-2">
+                            <i class="fas fa-check-circle text-blue-500 mt-1"></i>
+                            <span><strong>대응 전략 자동 제안:</strong> 수율 문제 → 공정 개선, 단가 문제 → 구매 협상/대체재 검토 등 액션 아이템 제시</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="mb-6">
+                    <h3 class="text-xl font-bold text-slate-900 mb-3">📊 정량적 성과</h3>
+                    <div class="grid md:grid-cols-3 gap-4">
+                        <div class="bg-blue-50 p-4 rounded-lg text-center">
+                            <p class="text-3xl font-bold text-blue-600">분석 자동화</p>
+                            <p class="text-sm text-slate-600 mt-1">5분 내 요인 분해</p>
+                        </div>
+                        <div class="bg-blue-50 p-4 rounded-lg text-center">
+                            <p class="text-3xl font-bold text-blue-600">100%</p>
+                            <p class="text-sm text-slate-600 mt-1">요인 분해 정확도</p>
+                        </div>
+                        <div class="bg-blue-50 p-4 rounded-lg text-center">
+                            <p class="text-3xl font-bold text-blue-600">12%</p>
+                            <p class="text-sm text-slate-600 mt-1">재료비 절감 기여</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div>
+                    <h3 class="text-xl font-bold text-slate-900 mb-3">🛠️ 기술 스택</h3>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="badge badge-primary">Google Apps Script</span>
+                        <span class="badge badge-primary">BigQuery SQL</span>
+                        <span class="badge badge-primary">파레토 분석</span>
+                        <span class="badge badge-primary">Chart.js Waterfall</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 모달 7: 제조비용 실적 모니터링 -->
+    <div id="modal7" class="modal">
+        <div class="modal-content">
+            <div class="p-8 border-b border-slate-200">
+                <span class="close-modal" onclick="closeModal('modal7')">&times;</span>
+                <h2 class="text-3xl font-bold text-slate-900 mt-2">제조비용 실적 모니터링 시스템</h2>
+                <p class="text-slate-600 mt-2">Manufacturing Cost Budget vs. Actual Tracking & Outlier Detection</p>
+            </div>
+            <div class="p-8">
+                <div class="mb-6">
+                    <h3 class="text-xl font-bold text-slate-900 mb-3">🎯 프로젝트 배경</h3>
+                    <p class="text-slate-600 keep-all leading-relaxed">
+                        제조 경비(전력비, 유지보수비, 소모품비 등)는 예산 대비 <strong>±20% 이상 차이</strong>가 나도 
+                        월말에야 발견되어 이미 손을 쓸 수 없는 상황이 빈번했습니다. 
+                        특히 돌발적인 설비 고장 수리비나 전력 요금 급등 같은 이상치를 <strong>즉시 감지하는 체계</strong>가 없었습니다.
+                    </p>
+                </div>
+
+                <div class="mb-6">
+                    <h3 class="text-xl font-bold text-slate-900 mb-3">💡 솔루션</h3>
+                    <ul class="space-y-2 text-slate-600">
+                        <li class="flex items-start gap-2">
+                            <i class="fas fa-check-circle text-red-500 mt-1"></i>
+                            <span><strong>예산 대비 집행률 실시간 추적:</strong> 일별/주별 누적 집행액 vs. 계획 비교 대시보드</span>
+                        </li>
+                        <li class="flex items-start gap-2">
+                            <i class="fas fa-check-circle text-red-500 mt-1"></i>
+                            <span><strong>이상치 자동 감지:</strong> 전월 동기 대비 ±30% 이상 차이 발생 시 즉시 알림</span>
+                        </li>
+                        <li class="flex items-start gap-2">
+                            <i class="fas fa-check-circle text-red-500 mt-1"></i>
+                            <span><strong>비용 항목별 드릴다운:</strong> 전력비/수도광열비/수선유지비/소모품비 등 세부 항목별 분석</span>
+                        </li>
+                        <li class="flex items-start gap-2">
+                            <i class="fas fa-check-circle text-red-500 mt-1"></i>
+                            <span><strong>절감 기회 하이라이트:</strong> 예산 대비 20% 이상 절감된 우수 사례를 자동으로 포착하여 벤치마킹 유도</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="mb-6">
+                    <h3 class="text-xl font-bold text-slate-900 mb-3">📊 정량적 성과</h3>
+                    <div class="grid md:grid-cols-3 gap-4">
+                        <div class="bg-red-50 p-4 rounded-lg text-center">
+                            <p class="text-3xl font-bold text-red-600">예산 관리</p>
+                            <p class="text-sm text-slate-600 mt-1">이상치 1일 내 감지</p>
+                        </div>
+                        <div class="bg-red-50 p-4 rounded-lg text-center">
+                            <p class="text-3xl font-bold text-red-600">95%</p>
+                            <p class="text-sm text-slate-600 mt-1">예산 준수율</p>
+                        </div>
+                        <div class="bg-red-50 p-4 rounded-lg text-center">
+                            <p class="text-3xl font-bold text-red-600">8%</p>
+                            <p class="text-sm text-slate-600 mt-1">연간 경비 절감</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div>
+                    <h3 class="text-xl font-bold text-slate-900 mb-3">🛠️ 기술 스택</h3>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="badge badge-primary">Google Apps Script</span>
+                        <span class="badge badge-primary">ERP 원가 데이터 연동</span>
+                        <span class="badge badge-primary">통계적 이상 탐지</span>
+                        <span class="badge badge-primary">예산 관리 알고리즘</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 모달 8: 자재 구매 최적화 시스템 -->
+    <div id="modal8" class="modal">
+        <div class="modal-content">
+            <div class="p-8 border-b border-slate-200">
+                <span class="close-modal" onclick="closeModal('modal8')">&times;</span>
+                <h2 class="text-3xl font-bold text-slate-900 mt-2">자재 구매 최적화 시스템</h2>
+                <p class="text-slate-600 mt-2">Data-driven Procurement Action Plan & Supplier Analysis</p>
+            </div>
+            <div class="p-8">
+                <div class="mb-6">
+                    <h3 class="text-xl font-bold text-slate-900 mb-3">🎯 프로젝트 배경</h3>
+                    <p class="text-slate-600 keep-all leading-relaxed">
+                        구매팀은 "어떤 자재를 언제 얼마나 사야 할지" 경험과 감에 의존했고, 
+                        <strong>실제 사용량 데이터</strong>와 <strong>가격 변동 추이</strong>를 통합 분석하는 시스템이 없었습니다. 
+                        결과적으로 과다 재고로 인한 창고 비용 증가, 또는 결품으로 인한 생산 중단이 반복되었습니다.
+                    </p>
+                </div>
+
+                <div class="mb-6">
+                    <h3 class="text-xl font-bold text-slate-900 mb-3">💡 솔루션</h3>
+                    <ul class="space-y-2 text-slate-600">
+                        <li class="flex items-start gap-2">
+                            <i class="fas fa-check-circle text-green-500 mt-1"></i>
+                            <span><strong>사용량 기반 ABC 분석:</strong> 상위 20% 품목이 전체 구매액의 80%를 차지하는 파레토 법칙 적용</span>
+                        </li>
+                        <li class="flex items-start gap-2">
+                            <i class="fas fa-check-circle text-green-500 mt-1"></i>
+                            <span><strong>단가 변동 추이 시각화:</strong> 최근 12개월 구매 단가 그래프로 협상 타이밍 포착</span>
+                        </li>
+                        <li class="flex items-start gap-2">
+                            <i class="fas fa-check-circle text-green-500 mt-1"></i>
+                            <span><strong>업체별 납품 성과 평가:</strong> 납기 준수율, 품질 불량률, 가격 경쟁력을 종합 점수화</span>
+                        </li>
+                        <li class="flex items-start gap-2">
+                            <i class="fas fa-check-circle text-green-500 mt-1"></i>
+                            <span><strong>구매 액션 플랜 자동 생성:</strong> "A자재는 단가 협상, B자재는 대체재 검토, C자재는 장기 계약 추천" 등</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="mb-6">
+                    <h3 class="text-xl font-bold text-slate-900 mb-3">📊 정량적 성과</h3>
+                    <div class="grid md:grid-cols-3 gap-4">
+                        <div class="bg-green-50 p-4 rounded-lg text-center">
+                            <p class="text-3xl font-bold text-green-600">구매 최적화</p>
+                            <p class="text-sm text-slate-600 mt-1">데이터 기반 의사결정</p>
+                        </div>
+                        <div class="bg-green-50 p-4 rounded-lg text-center">
+                            <p class="text-3xl font-bold text-green-600">18%</p>
+                            <p class="text-sm text-slate-600 mt-1">구매 비용 절감</p>
+                        </div>
+                        <div class="bg-green-50 p-4 rounded-lg text-center">
+                            <p class="text-3xl font-bold text-green-600">40%</p>
+                            <p class="text-sm text-slate-600 mt-1">재고 회전율 개선</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div>
+                    <h3 class="text-xl font-bold text-slate-900 mb-3">🛠️ 기술 스택</h3>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="badge badge-success">Google Apps Script</span>
+                        <span class="badge badge-success">BigQuery 구매 데이터</span>
+                        <span class="badge badge-success">ABC 분석 알고리즘</span>
+                        <span class="badge badge-success">Chart.js 추세 분석</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 모달 9: S&OP 통합 대시보드 -->
+    <div id="modal9" class="modal">
+        <div class="modal-content">
+            <div class="p-8 border-b border-slate-200">
+                <span class="close-modal" onclick="closeModal('modal9')">&times;</span>
+                <h2 class="text-3xl font-bold text-slate-900 mt-2">S&OP 통합 대시보드</h2>
+                <p class="text-slate-600 mt-2">Sales & Operations Planning Integrated Dashboard</p>
+            </div>
+            <div class="p-8">
+                <div class="mb-6">
+                    <h3 class="text-xl font-bold text-slate-900 mb-3">🎯 프로젝트 배경</h3>
+                    <p class="text-slate-600 keep-all leading-relaxed">
+                        영업팀의 <strong>수주 계획</strong>, 생산팀의 <strong>생산 능력</strong>, 자재팀의 <strong>재고 현황</strong>이 
+                        각각 다른 시스템에서 관리되어 <strong>전체 그림을 볼 수 없었습니다</strong>. 
+                        결과적으로 "납기를 못 맞출 것 같다"는 것을 출하 직전에야 알게 되어 고객 불만과 긴급 생산 비용이 증가했습니다.
+                    </p>
+                </div>
+
+                <div class="mb-6">
+                    <h3 class="text-xl font-bold text-slate-900 mb-3">💡 솔루션</h3>
+                    <ul class="space-y-2 text-slate-600">
+                        <li class="flex items-start gap-2">
+                            <i class="fas fa-check-circle text-blue-500 mt-1"></i>
+                            <span><strong>수주-생산-재고 통합 뷰:</strong> 하나의 대시보드에서 세 가지 데이터를 동시 조회</span>
+                        </li>
+                        <li class="flex items-start gap-2">
+                            <i class="fas fa-check-circle text-blue-500 mt-1"></i>
+                            <span><strong>납기 예측 알고리즘:</strong> 현재 생산 속도와 재고를 기반으로 "고객사 A의 주문은 2일 지연 예정" 경고</span>
+                        </li>
+                        <li class="flex items-start gap-2">
+                            <i class="fas fa-check-circle text-blue-500 mt-1"></i>
+                            <span><strong>결품 방지 시뮬레이션:</strong> "내일 B제품 생산을 중단하면 D+3일에 재고 소진" 같은 What-if 분석</span>
+                        </li>
+                        <li class="flex items-start gap-2">
+                            <i class="fas fa-check-circle text-blue-500 mt-1"></i>
+                            <span><strong>주간 S&OP 회의 자동 자료 생성:</strong> 매주 월요일 오전 자동으로 보고서 생성하여 이메일 발송</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="mb-6">
+                    <h3 class="text-xl font-bold text-slate-900 mb-3">📊 정량적 성과</h3>
+                    <div class="grid md:grid-cols-3 gap-4">
+                        <div class="bg-blue-50 p-4 rounded-lg text-center">
+                            <p class="text-3xl font-bold text-blue-600">SCM 통합</p>
+                            <p class="text-sm text-slate-600 mt-1">5일 사전 예측</p>
+                        </div>
+                        <div class="bg-blue-50 p-4 rounded-lg text-center">
+                            <p class="text-3xl font-bold text-blue-600">98%</p>
+                            <p class="text-sm text-slate-600 mt-1">납기 준수율</p>
+                        </div>
+                        <div class="bg-blue-50 p-4 rounded-lg text-center">
+                            <p class="text-3xl font-bold text-blue-600">70%</p>
+                            <p class="text-sm text-slate-600 mt-1">긴급 생산 감소</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div>
+                    <h3 class="text-xl font-bold text-slate-900 mb-3">🛠️ 기술 스택</h3>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="badge badge-primary">Google Apps Script</span>
+                        <span class="badge badge-primary">ERP-MES 통합 연동</span>
+                        <span class="badge badge-primary">예측 알고리즘</span>
+                        <span class="badge badge-primary">자동 보고서 생성</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
     <footer class="bg-slate-950 text-slate-500 py-10 text-center border-t border-slate-800">
         <p class="mb-2 font-bold text-slate-400">2025 Performance Report</p>
         <p class="text-sm">하림산업 생산본부 생산지원팀 원가파트</p>
@@ -1376,3 +1948,4 @@
     </script>
 </body>
 </html>
+
