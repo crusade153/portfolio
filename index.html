@@ -113,53 +113,38 @@
             font-weight: 700; 
         }
 
-        /* 프로그레스 바 */
-        .progress-bar {
-            height: 8px;
-            background: #e2e8f0;
-            border-radius: 10px;
-            overflow: hidden;
-            position: relative;
-        }
-        .progress-fill {
-            height: 100%;
-            background: linear-gradient(90deg, #2563eb, #60a5fa);
-            border-radius: 10px;
-            transition: width 1.5s ease-out;
-        }
-
         /* 모달 스타일 */
         .modal {
-            display: none;
-            position: fixed;
-            z-index: 1000;
-            left: 0;
-            top: 0;
-            width: 100%;
-            height: 100%;
-            background-color: rgba(0,0,0,0.7);
-            animation: fadeIn 0.3s;
+            display: none; 
+            position: fixed; 
+            z-index: 1000; 
+            left: 0; 
+            top: 0; 
+            width: 100%; 
+            height: 100%; 
+            background-color: rgba(0,0,0,0.7); 
+            animation: fadeIn 0.3s; 
         }
         .modal-content {
-            background-color: white;
-            margin: 5% auto;
-            padding: 0;
-            border-radius: 1.5rem;
-            width: 90%;
-            max-width: 900px;
-            max-height: 85vh;
-            overflow-y: auto;
-            animation: slideUp 0.4s;
-            box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+            background-color: white; 
+            margin: 5% auto; 
+            padding: 0; 
+            border-radius: 1.5rem; 
+            width: 90%; 
+            max-width: 900px; 
+            max-height: 85vh; 
+            overflow-y: auto; 
+            animation: slideUp 0.4s; 
+            box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25); 
         }
         .close-modal {
-            color: #64748b;
-            float: right;
-            font-size: 32px;
-            font-weight: bold;
-            cursor: pointer;
-            transition: color 0.3s;
-            line-height: 1;
+            color: #64748b; 
+            float: right; 
+            font-size: 32px; 
+            font-weight: bold; 
+            cursor: pointer; 
+            transition: color 0.3s; 
+            line-height: 1; 
         }
         .close-modal:hover { color: #0f172a; }
 
@@ -174,58 +159,59 @@
 
         /* 애니메이션 */
         .fade-in {
-            opacity: 0;
-            transform: translateY(30px);
-            transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+            opacity: 0; 
+            transform: translateY(30px); 
+            transition: opacity 0.8s ease-out, transform 0.8s ease-out; 
         }
         .fade-in.visible {
-            opacity: 1;
-            transform: translateY(0);
+            opacity: 1; 
+            transform: translateY(0); 
         }
 
         /* 배지 */
         .badge {
-            display: inline-flex;
-            align-items: center;
-            gap: 6px;
-            padding: 6px 12px;
-            border-radius: 20px;
-            font-size: 0.875rem;
-            font-weight: 600;
+            display: inline-flex; 
+            align-items: center; 
+            gap: 6px; 
+            padding: 6px 12px; 
+            border-radius: 20px; 
+            font-size: 0.875rem; 
+            font-weight: 600; 
         }
         .badge-primary { background: #dbeafe; color: #1e40af; }
         .badge-success { background: #d1fae5; color: #065f46; }
         .badge-warning { background: #fef3c7; color: #92400e; }
         .badge-purple { background: #e9d5ff; color: #6b21a8; }
+        .badge-danger { background: #fee2e2; color: #991b1b; }
 
         /* 통계 카운터 */
         .stat-number {
-            font-size: 4rem;
-            font-weight: 900;
-            line-height: 1;
-            color: white;
-            text-shadow: 0 2px 4px rgba(0,0,0,0.1);
-            letter-spacing: -0.02em;
+            font-size: 4rem; 
+            font-weight: 900; 
+            line-height: 1; 
+            color: white; 
+            text-shadow: 0 2px 4px rgba(0,0,0,0.1); 
+            letter-spacing: -0.02em; 
         }
         
         .stat-unit {
-            font-size: 1.75rem;
-            font-weight: 700;
-            color: white;
-            margin-left: 0.25rem;
+            font-size: 1.75rem; 
+            font-weight: 700; 
+            color: white; 
+            margin-left: 0.25rem; 
         }
         
         .stat-label {
-            font-size: 1rem;
-            font-weight: 600;
-            color: rgba(255,255,255,0.9);
-            margin-top: 0.5rem;
+            font-size: 1rem; 
+            font-weight: 600; 
+            color: rgba(255,255,255,0.9); 
+            margin-top: 0.5rem; 
         }
         
         .stat-description {
-            font-size: 0.875rem;
-            color: rgba(255,255,255,0.7);
-            margin-top: 0.25rem;
+            font-size: 0.875rem; 
+            color: rgba(255,255,255,0.7); 
+            margin-top: 0.25rem; 
         }
 
         /* 반응형 */
@@ -258,41 +244,52 @@
         
         <div class="max-w-7xl mx-auto px-6 lg:grid lg:grid-cols-12 lg:gap-16 items-center">
             <div class="lg:col-span-7 relative z-10">
-                <div class="inline-block px-4 py-1.5 rounded-full bg-blue-100 text-blue-700 font-bold text-sm mb-6 shadow-sm">
-                    📊 2025년 원가혁신 DX 프로젝트
+                <div class="flex flex-wrap gap-2 mb-6">
+                    <span class="inline-block px-4 py-1.5 rounded-full bg-blue-100 text-blue-700 font-bold text-sm shadow-sm">
+                        📊 2025 원가혁신 DX 프로젝트
+                    </span>
+                    <span class="inline-block px-4 py-1.5 rounded-full bg-green-100 text-green-700 font-bold text-sm shadow-sm">
+                        🏆 KPI 100% 완수
+                    </span>
                 </div>
-                <h1 class="text-5xl lg:text-6xl font-extrabold tracking-tight text-slate-900 leading-tight keep-all mb-6">
+                
+                <h1 class="text-4xl lg:text-6xl font-extrabold tracking-tight text-slate-900 leading-tight keep-all mb-6">
                     데이터 기반<br>
                     <span class="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-indigo-600">원가관리 혁신 완성</span>
                 </h1>
-                <p class="text-lg lg:text-xl text-slate-600 leading-relaxed keep-all font-medium mb-8 max-w-2xl">
-                    5대 전략과제 완수를 통한 <strong>통합 원가관리 체계 구축</strong><br>
-                    9개+ 자체 개발 시스템으로 <span class="highlight">연간 2,500시간 업무 자동화 달성</span><br>
-                    <strong class="text-blue-600">관리적 기회비용 4,000만원 절감 실현</strong>
-                </p>
                 
-                <!-- 배지들 -->
-                <div class="flex flex-wrap gap-3 mb-8">
-                    <span class="badge badge-success">
-                        <i class="fas fa-trophy"></i> 5대 전략과제 완수
-                    </span>
-                    <span class="badge badge-primary">
-                        <i class="fas fa-chalkboard-teacher"></i> ONE-ERP 교육 강사
-                    </span>
-                    <span class="badge badge-purple">
-                        <i class="fas fa-code"></i> 9개 시스템 구축
-                    </span>
+                <div class="bg-white/80 backdrop-blur border-l-4 border-blue-600 p-5 mb-8 rounded-r-xl shadow-sm">
+                    <h3 class="font-extrabold text-slate-900 text-lg mb-3 flex items-center gap-2">
+                        <i class="fas fa-rocket text-blue-600"></i> 핵심 TF 활동 성과
+                    </h3>
+                    <ul class="space-y-2 text-slate-700">
+                        <li class="flex items-center gap-3">
+                            <span class="text-blue-600 font-bold text-xl">01</span> 
+                            <span><strong>원가 TF:</strong> 표준원가 정합성 <span class="bg-blue-100 text-blue-700 px-2 py-0.5 rounded font-bold">65% → 90%</span> 대폭 상향</span>
+                        </li>
+                        <li class="flex items-center gap-3">
+                            <span class="text-blue-600 font-bold text-xl">02</span> 
+                            <span><strong>리본 TF:</strong> 비정형/비효율 업무 <span class="bg-blue-100 text-blue-700 px-2 py-0.5 rounded font-bold">100% 정규화 및 자동화</span></span>
+                        </li>
+                    </ul>
                 </div>
 
-                <!-- 핵심 요약 카드 -->
+                <p class="text-lg text-slate-600 leading-relaxed keep-all font-medium mb-8 max-w-2xl">
+                    100% 자체 개발 역량으로 13개 시스템 구축.<br>
+                    외주 개발비용 <strong>3억원 절감</strong> 및 연간 업무시간 <strong>2,500시간 단축</strong>을 통해
+                    실질적인 경영 효율화를 실현했습니다.
+                </p>
+                
                 <div class="grid grid-cols-2 gap-4">
-                    <div class="bg-white p-6 rounded-xl border-2 border-blue-100 shadow-md">
-                        <p class="text-sm text-slate-600 font-bold mb-1">시간 절감</p>
-                        <p class="text-3xl font-extrabold text-blue-600">2,500<span class="text-lg">시간/년</span></p>
+                    <div class="bg-white p-6 rounded-xl border-2 border-blue-100 shadow-md transition hover:-translate-y-1">
+                        <p class="text-sm text-slate-600 font-bold mb-1">총 경제적 가치 창출</p>
+                        <p class="text-3xl font-extrabold text-blue-600">3.4<span class="text-lg">억원</span></p>
+                        <p class="text-xs text-slate-500 mt-1">구축비 + 기회비용 절감</p>
                     </div>
-                    <div class="bg-white p-6 rounded-xl border-2 border-indigo-100 shadow-md">
-                        <p class="text-sm text-slate-600 font-bold mb-1">기회비용 절감</p>
-                        <p class="text-3xl font-extrabold text-indigo-600">4,000<span class="text-lg">만원</span></p>
+                    <div class="bg-white p-6 rounded-xl border-2 border-indigo-100 shadow-md transition hover:-translate-y-1">
+                        <p class="text-sm text-slate-600 font-bold mb-1">의사결정 정확도</p>
+                        <p class="text-3xl font-extrabold text-indigo-600">90<span class="text-lg">%</span></p>
+                        <p class="text-xs text-slate-500 mt-1">원가 데이터 정합성 확보</p>
                     </div>
                 </div>
             </div>
@@ -310,7 +307,6 @@
         </div>
     </section>
 
-    <!-- 성과 지표 인포그래픽 섹션 -->
     <section id="achievements" class="py-20 bg-gradient-to-br from-blue-600 via-indigo-600 to-purple-600 text-white relative overflow-hidden">
         <div class="absolute inset-0 opacity-10">
             <div class="absolute top-0 left-0 w-96 h-96 bg-white rounded-full blur-3xl"></div>
@@ -320,75 +316,69 @@
         <div class="max-w-7xl mx-auto px-6 relative z-10">
             <div class="text-center mb-16">
                 <h2 class="text-4xl lg:text-5xl font-extrabold mb-4 keep-all text-white">2025년 정량적 성과</h2>
-                <p class="text-blue-100 text-lg keep-all">5대 전략과제 완수를 통한 실질적 혁신 달성</p>
+                <p class="text-blue-100 text-lg keep-all">KPI 100% 달성 및 시스템 내재화를 통한 가치 창출</p>
             </div>
 
             <div class="grid grid-cols-2 md:grid-cols-4 gap-8 mb-16">
-                <!-- 통계 1 -->
                 <div class="text-center fade-in">
+                    <div class="flex items-end justify-center">
+                        <div class="stat-number" data-target="3">0</div>
+                        <span class="stat-unit">억원</span>
+                    </div>
+                    <p class="stat-label">외주 개발비 절감</p>
+                    <p class="stat-description">13개 시스템 자체 구축</p>
+                </div>
+                
+                <div class="text-center fade-in" style="transition-delay: 0.1s;">
+                    <div class="flex items-end justify-center">
+                        <div class="stat-number" data-target="90">0</div>
+                        <span class="stat-unit">%</span>
+                    </div>
+                    <p class="stat-label">표준원가 정합성</p>
+                    <p class="stat-description">65%에서 대폭 상향</p>
+                </div>
+                
+                <div class="text-center fade-in" style="transition-delay: 0.2s;">
                     <div class="flex items-end justify-center">
                         <div class="stat-number" data-target="2500">0</div>
                         <span class="stat-unit">시간</span>
                     </div>
-                    <p class="stat-label">연간 업무 자동화</p>
+                    <p class="stat-label">업무 자동화</p>
                     <p class="stat-description">수작업 완전 제거</p>
                 </div>
                 
-                <!-- 통계 2 -->
-                <div class="text-center fade-in" style="transition-delay: 0.1s;">
-                    <div class="flex items-end justify-center">
-                        <div class="stat-number" data-target="4000">0</div>
-                        <span class="stat-unit">만원</span>
-                    </div>
-                    <p class="stat-label">기회비용 절감</p>
-                    <p class="stat-description">시간당 1.6만원 환산</p>
-                </div>
-                
-                <!-- 통계 3 -->
-                <div class="text-center fade-in" style="transition-delay: 0.2s;">
-                    <div class="flex items-end justify-center">
-                        <div class="stat-number" data-target="9">0</div>
-                        <span class="stat-unit">개+</span>
-                    </div>
-                    <p class="stat-label">자체 개발 시스템</p>
-                    <p class="stat-description">외주비 제로</p>
-                </div>
-                
-                <!-- 통계 4 -->
                 <div class="text-center fade-in" style="transition-delay: 0.3s;">
                     <div class="flex items-end justify-center">
-                        <div class="stat-number" data-target="40">0</div>
+                        <div class="stat-number" data-target="100">0</div>
                         <span class="stat-unit">%</span>
                     </div>
-                    <p class="stat-label">마감 리드타임 단축</p>
-                    <p class="stat-description">D+5일 → D+3일</p>
+                    <p class="stat-label">KPI 목표 달성</p>
+                    <p class="stat-description">전략과제 및 TF 목표 완수</p>
                 </div>
             </div>
 
-            <!-- 핵심 성과 카드 -->
             <div class="grid md:grid-cols-3 gap-6">
-                <div class="bg-white/10 backdrop-blur-sm rounded-2xl p-6 border border-white/20 fade-in" style="transition-delay: 0.4s;">
+                <div class="bg-white/10 backdrop-blur-sm rounded-2xl p-6 border border-white/20 fade-in hover:bg-white/20 transition duration-300" style="transition-delay: 0.4s;">
                     <div class="text-3xl mb-3">🎯</div>
-                    <h3 class="text-xl font-bold mb-2">실시간 의사결정 체계</h3>
-                    <p class="text-blue-100 text-sm keep-all leading-relaxed">일일 원가/수율/생산성 즉시 집계로 당일 대응 가능한 경영 인프라 구축</p>
+                    <h3 class="text-xl font-bold mb-2">원가 TF 혁신 성공</h3>
+                    <p class="text-blue-100 text-sm keep-all leading-relaxed">표준원가 정합성을 65%에서 90%로 끌어올려 데이터 기반 의사결정의 신뢰도를 확보했습니다.</p>
                 </div>
                 
-                <div class="bg-white/10 backdrop-blur-sm rounded-2xl p-6 border border-white/20 fade-in" style="transition-delay: 0.5s;">
-                    <div class="text-3xl mb-3">⚡</div>
-                    <h3 class="text-xl font-bold mb-2">데이터 정합성 99% 달성</h3>
-                    <p class="text-blue-100 text-sm keep-all leading-relaxed">MES-ERP 자동 연동으로 수기 입력 오류 제로화 및 마감 업무 100% 전산화</p>
+                <div class="bg-white/10 backdrop-blur-sm rounded-2xl p-6 border border-white/20 fade-in hover:bg-white/20 transition duration-300" style="transition-delay: 0.5s;">
+                    <div class="text-3xl mb-3">🔄</div>
+                    <h3 class="text-xl font-bold mb-2">리본 TF 프로세스 정규화</h3>
+                    <p class="text-blue-100 text-sm keep-all leading-relaxed">비정상/비효율 업무를 100% 정규화하고 시스템화하여 지속 가능한 운영 체계를 완성했습니다.</p>
                 </div>
                 
-                <div class="bg-white/10 backdrop-blur-sm rounded-2xl p-6 border border-white/20 fade-in" style="transition-delay: 0.6s;">
-                    <div class="text-3xl mb-3">💡</div>
-                    <h3 class="text-xl font-bold mb-2">전사 DX 문화 확산</h3>
-                    <p class="text-blue-100 text-sm keep-all leading-relaxed">ONE-ERP 임원워크숍 강의 및 셀프BI 교육으로 데이터 기반 의사결정 조직문화 정착</p>
+                <div class="bg-white/10 backdrop-blur-sm rounded-2xl p-6 border border-white/20 fade-in hover:bg-white/20 transition duration-300" style="transition-delay: 0.6s;">
+                    <div class="text-3xl mb-3">💰</div>
+                    <h3 class="text-xl font-bold mb-2">압도적 구축 효율</h3>
+                    <p class="text-blue-100 text-sm keep-all leading-relaxed">외주 없이 13개 시스템을 직접 개발하여, 최소 3억 원 이상의 SI 개발 예산을 절감했습니다.</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- 5대 전략과제 섹션 -->
     <section id="strategies" class="py-20 bg-white">
         <div class="max-w-7xl mx-auto px-6">
             <div class="text-center mb-16">
@@ -397,7 +387,6 @@
             </div>
 
             <div class="space-y-6">
-                <!-- 전략 1 -->
                 <div class="card p-8 border-l-4 border-l-blue-600 fade-in">
                     <div class="flex items-start gap-6">
                         <div class="w-16 h-16 rounded-xl bg-blue-100 text-blue-600 flex items-center justify-center text-2xl font-bold shrink-0">
@@ -435,7 +424,6 @@
                     </div>
                 </div>
 
-                <!-- 전략 2 -->
                 <div class="card p-8 border-l-4 border-l-indigo-600 fade-in" style="transition-delay: 0.1s;">
                     <div class="flex items-start gap-6">
                         <div class="w-16 h-16 rounded-xl bg-indigo-100 text-indigo-600 flex items-center justify-center text-2xl font-bold shrink-0">
@@ -473,7 +461,6 @@
                     </div>
                 </div>
 
-                <!-- 전략 3 -->
                 <div class="card p-8 border-l-4 border-l-green-600 fade-in" style="transition-delay: 0.2s;">
                     <div class="flex items-start gap-6">
                         <div class="w-16 h-16 rounded-xl bg-green-100 text-green-600 flex items-center justify-center text-2xl font-bold shrink-0">
@@ -511,7 +498,6 @@
                     </div>
                 </div>
 
-                <!-- 전략 4 -->
                 <div class="card p-8 border-l-4 border-l-purple-600 fade-in" style="transition-delay: 0.3s;">
                     <div class="flex items-start gap-6">
                         <div class="w-16 h-16 rounded-xl bg-purple-100 text-purple-600 flex items-center justify-center text-2xl font-bold shrink-0">
@@ -549,7 +535,6 @@
                     </div>
                 </div>
 
-                <!-- 전략 5 -->
                 <div class="card p-8 border-l-4 border-l-orange-600 fade-in" style="transition-delay: 0.4s;">
                     <div class="flex items-start gap-6">
                         <div class="w-16 h-16 rounded-xl bg-orange-100 text-orange-600 flex items-center justify-center text-2xl font-bold shrink-0">
@@ -586,29 +571,38 @@
                         </div>
                     </div>
                 </div>
-
             </div>
 
-            <!-- 총 기회비용 요약 -->
-            <div class="mt-12 bg-gradient-to-r from-blue-50 to-indigo-50 p-8 rounded-2xl border-2 border-blue-200">
+            <div class="mt-12 bg-gradient-to-r from-slate-900 to-slate-800 p-8 rounded-2xl shadow-xl text-white">
                 <div class="text-center">
-                    <h3 class="text-2xl font-bold text-slate-900 mb-4">2025년 총 기회비용 절감 효과</h3>
-                    <div class="grid md:grid-cols-2 gap-6">
-                        <div>
-                            <p class="text-slate-600 text-sm mb-2">총 절감 시간</p>
-                            <p class="text-5xl font-extrabold text-blue-600">2,500<span class="text-2xl">시간</span></p>
-                            <p class="text-xs text-slate-500 mt-2">9개 시스템 자동화 누적</p>
+                    <h3 class="text-2xl font-bold mb-2 text-white">2025년 총 경제적 가치 분석 (Total Economic Value)</h3>
+                    <p class="text-slate-400 text-sm mb-8">업무 효율화에 따른 기회비용 + 외주 개발 대체 비용</p>
+                    
+                    <div class="grid md:grid-cols-3 gap-6 divide-y md:divide-y-0 md:divide-x divide-slate-700">
+                        <div class="pb-4 md:pb-0">
+                            <p class="text-slate-400 text-sm mb-2">운영 기회비용 절감</p>
+                            <p class="text-4xl font-extrabold text-blue-400">4,000<span class="text-xl">만원</span></p>
+                            <p class="text-xs text-slate-500 mt-2">연간 2,500시간 절약분</p>
                         </div>
-                        <div>
-                            <p class="text-slate-600 text-sm mb-2">총 기회비용 절감</p>
-                            <p class="text-5xl font-extrabold text-indigo-600">4,000<span class="text-2xl">만원</span></p>
-                            <p class="text-xs text-slate-500 mt-2">2,500시간 × 16,000원/시간</p>
+                        <div class="py-4 md:py-0">
+                            <p class="text-slate-400 text-sm mb-2">구축 예산 절감 (SI대체)</p>
+                            <p class="text-4xl font-extrabold text-green-400">3.0<span class="text-xl">억원</span></p>
+                            <p class="text-xs text-slate-500 mt-2">13개 시스템 자체개발</p>
+                        </div>
+                        <div class="pt-4 md:pt-0">
+                            <p class="text-slate-400 text-sm mb-2">총 경제적 효과</p>
+                            <p class="text-5xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-green-400">3.4<span class="text-2xl text-white">억원</span></p>
+                            <p class="text-xs text-slate-500 mt-2">Cost Saving + Avoidance</p>
                         </div>
                     </div>
-                    <div class="mt-6 p-4 bg-white rounded-lg border border-blue-200">
-                        <p class="text-sm text-slate-600 keep-all">
-                            <strong>산정 근거:</strong> 관리직 평균 연봉 4,000만원 ÷ 12개월 ÷ 209시간 = 시간당 16,000원<br>
-                            <strong>절감 내역:</strong> 원가집계 750h + 재고관리 500h + 근태관리 208h + 마감모니터링 500h + 분석 800h + 예측 450h + 기타 292h = 총 2,500시간
+                    
+                    <div class="mt-8 p-4 bg-white/10 rounded-lg text-left border border-white/10">
+                        <p class="text-xs text-slate-300 keep-all">
+                            <strong>※ 산정 근거:</strong><br>
+                            1. <strong>운영 기회비용:</strong> 관리직 평균 시간당 인건비(1.6만원) × 절감시간(2,500h) ≈ 4,000만원<br>
+                            2. <strong>구축 예산 절감:</strong> 13개 엔터프라이즈급 웹 시스템 외주 견적(보수적 산정).<br> 
+                               &nbsp;&nbsp;&nbsp;- 시스템 당 평균 SI 단가 2,300만원 가정 시 (9개 핵심 + 4개 확장) ≈ 약 3억원.<br>
+                               &nbsp;&nbsp;&nbsp;- MES/ERP 연동 및 데이터 시각화가 포함된 고난이도 개발 건으로 실제 가치는 더 높음.
                         </p>
                     </div>
                 </div>
@@ -616,7 +610,6 @@
         </div>
     </section>
 
-    <!-- 시스템 포트폴리오 섹션 -->
     <section id="systems" class="py-24 bg-slate-50">
         <div class="max-w-7xl mx-auto px-6">
             <div class="text-center mb-16">
@@ -628,7 +621,6 @@
                 </p>
             </div>
             
-            <!-- 핵심 시스템 (9개) -->
             <h3 class="text-2xl font-bold text-slate-900 mb-6 flex items-center gap-3">
                 <span class="w-10 h-10 rounded-lg bg-blue-100 text-blue-600 flex items-center justify-center text-xl">🎯</span>
                 핵심 시스템 (Core Systems)
@@ -818,7 +810,6 @@
 
             </div>
 
-            <!-- 확장 시스템 (4개) -->
             <h3 class="text-2xl font-bold text-slate-900 mb-6 flex items-center gap-3 mt-16">
                 <span class="w-10 h-10 rounded-lg bg-indigo-100 text-indigo-600 flex items-center justify-center text-xl">⚡</span>
                 확장 시스템 (Additional Projects)
@@ -874,7 +865,6 @@
         </div>
     </section>
 
-    <!-- 교육 및 대외활동 섹션 -->
     <section id="education" class="py-20 bg-white">
         <div class="max-w-7xl mx-auto px-6">
             <div class="text-center mb-16">
@@ -883,7 +873,6 @@
             </div>
 
             <div class="grid md:grid-cols-2 gap-8">
-                <!-- ONE-ERP 임원워크숍 -->
                 <div class="card p-8 border-l-4 border-l-blue-600 fade-in">
                     <div class="flex items-start gap-4">
                         <div class="w-16 h-16 rounded-full bg-blue-100 flex items-center justify-center text-3xl shrink-0">
@@ -928,7 +917,6 @@
                     </div>
                 </div>
 
-                <!-- 셀프BI 교육 강사 -->
                 <div class="card p-8 border-l-4 border-l-purple-600 fade-in" style="transition-delay: 0.1s;">
                     <div class="flex items-start gap-4">
                         <div class="w-16 h-16 rounded-full bg-purple-100 flex items-center justify-center text-3xl shrink-0">
@@ -974,7 +962,6 @@
                 </div>
             </div>
 
-            <!-- 교육 효과 -->
             <div class="mt-12 bg-gradient-to-r from-indigo-50 to-purple-50 p-8 rounded-2xl border-2 border-indigo-200">
                 <h3 class="text-xl font-bold text-slate-900 mb-4 text-center">교육 활동의 조직 기여도</h3>
                 <div class="grid md:grid-cols-3 gap-6">
@@ -995,8 +982,6 @@
         </div>
     </section>
 
-    <!-- 모달들 (기존과 동일하게 유지) -->
-    <!-- 모달 1: 일일 원가 및 생산성 집계 -->
     <div id="modal1" class="modal">
         <div class="modal-content">
             <div class="p-8 border-b border-slate-200">
@@ -1061,13 +1046,132 @@
             </div>
         </div>
     </div>
+    
+    <div id="modal2" class="modal">
+        <div class="modal-content">
+            <div class="p-8 border-b border-slate-200">
+                <span class="close-modal" onclick="closeModal('modal2')">&times;</span>
+                <h2 class="text-3xl font-bold text-slate-900 mt-2">실시간 재고/소비기한 관리</h2>
+                <p class="text-slate-600 mt-2">Real-time Inventory & Expiration Management</p>
+            </div>
+            <div class="p-8">
+                <div class="mb-6">
+                    <h3 class="text-xl font-bold text-slate-900 mb-3">🎯 프로젝트 배경</h3>
+                    <p class="text-slate-600 keep-all leading-relaxed">
+                        유통기한 임박 자재의 현황 파악이 늦어져 폐기 손실이 발생하고, 실시간 재고 불일치로 인해 생산 계획 수립에 차질이 빚어지는 문제를 해결하고자 했습니다.
+                    </p>
+                </div>
+                <div class="mb-6">
+                    <h3 class="text-xl font-bold text-slate-900 mb-3">💡 솔루션</h3>
+                    <ul class="space-y-2 text-slate-600">
+                        <li class="flex items-start gap-2">
+                            <i class="fas fa-check-circle text-green-500 mt-1"></i>
+                            <span><strong>시각적 경고 시스템:</strong> 소비기한 임박 시 색상 변화(Yellow -> Red)로 직관적 경고</span>
+                        </li>
+                        <li class="flex items-start gap-2">
+                            <i class="fas fa-check-circle text-green-500 mt-1"></i>
+                            <span><strong>선입선출(FEFO) 모니터링:</strong> 입고일 기준 출고 순서 위반 시 경보 발송</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div id="modal3" class="modal">
+        <div class="modal-content">
+            <div class="p-8 border-b border-slate-200">
+                <span class="close-modal" onclick="closeModal('modal3')">&times;</span>
+                <h2 class="text-3xl font-bold text-slate-900 mt-2">AI 근태 예측/관리 시스템</h2>
+                <p class="text-slate-600 mt-2">AI-Driven Attendance Prediction</p>
+            </div>
+            <div class="p-8">
+                <p class="text-slate-600">주 52시간 근무제 준수를 위해 잔여 근무시간을 예측하고, 초과 위험 시 관리자와 본인에게 사전 알림을 발송하여 법적 리스크를 100% 차단했습니다.</p>
+            </div>
+        </div>
+    </div>
 
-    <!-- 나머지 모달 2~9는 기존과 동일하므로 생략 (필요시 포함) -->
-    <!-- 간략화를 위해 모달 2~9 코드는 원본 HTML과 동일하게 유지하시면 됩니다 -->
+    <div id="modal4" class="modal">
+        <div class="modal-content">
+            <div class="p-8 border-b border-slate-200">
+                <span class="close-modal" onclick="closeModal('modal4')">&times;</span>
+                <h2 class="text-3xl font-bold text-slate-900 mt-2">실시간 생산성 대시보드</h2>
+                <p class="text-slate-600 mt-2">Real-time Productivity Dashboard</p>
+            </div>
+            <div class="p-8">
+                <p class="text-slate-600">라인별, 품목별 UPMH(인시당 생산성)를 실시간으로 집계하여 목표 대비 달성률을 시각화하고, 저조 라인에 대한 즉각적인 원인 분석을 지원합니다.</p>
+            </div>
+        </div>
+    </div>
+
+    <div id="modal5" class="modal">
+        <div class="modal-content">
+            <div class="p-8 border-b border-slate-200">
+                <span class="close-modal" onclick="closeModal('modal5')">&times;</span>
+                <h2 class="text-3xl font-bold text-slate-900 mt-2">일일 실적 마감 모니터링</h2>
+                <p class="text-slate-600 mt-2">Daily Closing Monitoring System</p>
+            </div>
+            <div class="p-8">
+                <p class="text-slate-600">생산/자재/출고 마감 현황을 한눈에 파악하고, 미마감 건에 대해 담당자에게 자동으로 '핀셋 알림(Google Chat)'을 발송하여 월 마감 리드타임을 획기적으로 단축했습니다.</p>
+            </div>
+        </div>
+    </div>
+
+    <div id="modal6" class="modal">
+        <div class="modal-content">
+            <div class="p-8 border-b border-slate-200">
+                <span class="close-modal" onclick="closeModal('modal6')">&times;</span>
+                <h2 class="text-3xl font-bold text-slate-900 mt-2">재료비 원단위 심층 분석</h2>
+                <p class="text-slate-600 mt-2">Material Cost Deep Analysis</p>
+            </div>
+            <div class="p-8">
+                <p class="text-slate-600">재료비 상승 원인을 수율(내부 요인)과 단가(외부 요인)로 명확히 분리하여, 생산팀과 구매팀의 책임 소재를 명확히 하고 개선 포인트를 도출합니다.</p>
+            </div>
+        </div>
+    </div>
+
+    <div id="modal7" class="modal">
+        <div class="modal-content">
+            <div class="p-8 border-b border-slate-200">
+                <span class="close-modal" onclick="closeModal('modal7')">&times;</span>
+                <h2 class="text-3xl font-bold text-slate-900 mt-2">제조비용 실적 모니터링</h2>
+                <p class="text-slate-600 mt-2">Manufacturing Cost Monitoring</p>
+            </div>
+            <div class="p-8">
+                <p class="text-slate-600">계정별/부서별 예산 대비 실적을 실시간으로 추적하고, 이상 급증 비용 발생 시 즉시 경고하여 불필요한 비용 누수를 방지합니다.</p>
+            </div>
+        </div>
+    </div>
+
+    <div id="modal8" class="modal">
+        <div class="modal-content">
+            <div class="p-8 border-b border-slate-200">
+                <span class="close-modal" onclick="closeModal('modal8')">&times;</span>
+                <h2 class="text-3xl font-bold text-slate-900 mt-2">자재 구매 최적화 시스템</h2>
+                <p class="text-slate-600 mt-2">Material Purchasing Optimization</p>
+            </div>
+            <div class="p-8">
+                <p class="text-slate-600">과거 사용량 패턴과 현재 재고, 리드타임을 분석하여 최적의 발주 시점과 수량을 제안함으로써 재고 비용을 최소화합니다.</p>
+            </div>
+        </div>
+    </div>
+
+    <div id="modal9" class="modal">
+        <div class="modal-content">
+            <div class="p-8 border-b border-slate-200">
+                <span class="close-modal" onclick="closeModal('modal9')">&times;</span>
+                <h2 class="text-3xl font-bold text-slate-900 mt-2">S&OP 통합 대시보드</h2>
+                <p class="text-slate-600 mt-2">S&OP Integrated Dashboard</p>
+            </div>
+            <div class="p-8">
+                <p class="text-slate-600">영업(수주), 생산(계획), 구매(자재) 데이터를 통합하여 전사적인 수급 균형을 맞추고, 결품 및 납기 지연을 사전에 방지하는 컨트롤 타워 역할을 수행합니다.</p>
+            </div>
+        </div>
+    </div>
 
     <footer class="bg-slate-950 text-slate-500 py-10 text-center border-t border-slate-800">
         <p class="mb-2 font-bold text-slate-400">2025 Performance Report</p>
-        <p class="text-sm">하림산업 생산본부 원가파트</p>
+        <p class="text-sm">하림산업 생산본부 생산지원팀 원가파트</p>
         <p class="text-xs mt-2 text-slate-600">Data-Driven Cost Management Innovation</p>
     </footer>
 
@@ -1081,7 +1185,8 @@
             const timer = setInterval(() => {
                 current += increment;
                 if (current >= target) {
-                    element.textContent = Math.floor(target);
+                    // 소수점이 있는 경우(3.4)와 정수(90) 구분 처리
+                    element.textContent = target % 1 === 0 ? Math.floor(target) : target.toFixed(1);
                     clearInterval(timer);
                 } else {
                     element.textContent = Math.floor(current);
@@ -1105,13 +1210,19 @@
 
         // ===== 모달 관리 =====
         function openModal(modalId) {
-            document.getElementById(modalId).style.display = 'block';
-            document.body.style.overflow = 'hidden';
+            const modal = document.getElementById(modalId);
+            if(modal) {
+                modal.style.display = 'block';
+                document.body.style.overflow = 'hidden';
+            }
         }
 
         function closeModal(modalId) {
-            document.getElementById(modalId).style.display = 'none';
-            document.body.style.overflow = 'auto';
+            const modal = document.getElementById(modalId);
+            if(modal) {
+                modal.style.display = 'none';
+                document.body.style.overflow = 'auto';
+            }
         }
 
         window.onclick = function(event) {
@@ -1133,7 +1244,7 @@
                 entries.forEach(entry => {
                     if (entry.isIntersecting) {
                         statNumbers.forEach(stat => {
-                            const target = parseInt(stat.getAttribute('data-target'));
+                            const target = parseFloat(stat.getAttribute('data-target'));
                             animateCounter(stat, target);
                         });
                         observer.unobserve(entry.target);
